@@ -1,0 +1,25 @@
+name: Usecaselabs
+description: Custom theme for FE usecaselabs
+type: theme
+core_version_requirement: ^9 || ^10
+base theme: olivero
+
+regions:
+  primary_header: Primary Header
+  secondary_header: Secondary Header
+  hero: Hero (full width)
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+
+libraries:
+  - usecaselabs/global
+
+libraries-override:
+  olivero/navigation-base:
+    js:
+      js/navigation-utils.js: false
+
+  olivero/messages:
+    js:
+      js/messages.js: false
