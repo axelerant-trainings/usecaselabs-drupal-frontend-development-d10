@@ -1,0 +1,19 @@
+uuid: 55e2c2f3-e96c-4972-b4e9-badf541082bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal_dialog
+    - field.storage.block_content.field_title
+id: block_content.modal_dialog.field_title
+field_name: field_title
+entity_type: block_content
+bundle: modal_dialog
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

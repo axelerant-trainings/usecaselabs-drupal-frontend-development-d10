@@ -1,0 +1,24 @@
+uuid: 82cd3b81-0f90-432b-b405-3c50570bafad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal_dialog
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.modal_dialog.body
+field_name: body
+entity_type: block_content
+bundle: modal_dialog
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

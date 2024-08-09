@@ -1,0 +1,8 @@
+uuid: 8bc259ee-c6a8-4f3a-a0d4-448ff46d16c6
+langcode: en
+status: true
+dependencies: {  }
+id: modal_dialog
+label: 'Modal Dialog'
+revision: false
+description: 'A custom block to create different modal dialogs used across the site to display information when a visitor visits a page.'
