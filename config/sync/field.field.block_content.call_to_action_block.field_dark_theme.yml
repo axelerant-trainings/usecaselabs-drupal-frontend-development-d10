@@ -1,0 +1,21 @@
+uuid: 772a161a-0c06-4531-b8e1-274643af93dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action_block
+    - field.storage.block_content.field_dark_theme
+id: block_content.call_to_action_block.field_dark_theme
+field_name: field_dark_theme
+entity_type: block_content
+bundle: call_to_action_block
+label: 'Dark Theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

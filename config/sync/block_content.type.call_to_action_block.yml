@@ -1,0 +1,8 @@
+uuid: 373ea320-aa3c-4e99-a779-eab124418f0c
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action_block
+label: 'Call to action block'
+revision: false
+description: null

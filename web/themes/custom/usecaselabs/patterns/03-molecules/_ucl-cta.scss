@@ -1,0 +1,36 @@
+.ucl-cta {
+  background-color: #1475ad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  &__title {
+    color: #fff;
+  }
+
+  &__body {
+    color: #fff;
+  }
+
+  .ucl-cta-left {
+    flex-basis: 60%;
+  }
+
+  .button--primary {
+    border-color: #fff;
+  }
+
+  &--dark-theme {
+    background-color: #000;
+
+    .button--primary {
+      border-color: #1475ad;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
