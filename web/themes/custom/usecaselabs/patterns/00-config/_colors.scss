@@ -1,1 +1,52 @@
 // Define colors scss variables here.
+.default-colors {
+  /**
+   * Variables specific to text.
+   */
+  --color-text-neutral-soft: var(--color--gray-45);
+  --color-text-neutral-medium: var(--color--gray-20);
+  --color-text-neutral-loud: var(--color--gray-5);
+
+  --color-text-primary-medium: var(--color--primary-40);
+  --color-text-primary-loud: var(--color--primary-30);
+
+  /**
+   * Named Colors.
+   */
+  --color--black: #000;
+  /* Black */
+  --color--white: #fff;
+  /* White */
+  --color--red: #e33f1e;
+  /* Red */
+  --color--gold: #fdca40;
+  /* Gold */
+  --color--green: #3fa21c;
+  /* Green */
+}
+
+.contrast-colors {
+  /**
+   * Variables specific to text for dark mode.
+   */
+  --color-text-neutral-soft: var(--color--black);
+  --color-text-neutral-medium: var(--color--black);
+  --color-text-neutral-loud: var(--color--black);
+
+  --color-text-primary-medium: var(--color--black);
+  --color-text-primary-loud: var(--color--black);
+
+  /**
+   * Named Colors adjusted for dark mode.
+   */
+  --color--black: #fff;
+  /* Inverted black */
+  --color--white: #000;
+  /* Inverted white */
+  --color--red: #b62e14;
+  /* Darker red */
+  --color--gold: #c8a736;
+  /* Darker gold */
+  --color--green: #2a8a12;
+  /* Darker green */
+}

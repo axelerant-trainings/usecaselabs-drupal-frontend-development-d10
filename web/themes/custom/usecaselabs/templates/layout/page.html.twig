@@ -45,7 +45,6 @@
  * @see html.html.twig
  */
 #}
-
 <div id="page-wrapper" class="page-wrapper">
 	<div id="page">
 
@@ -68,9 +67,9 @@
 								{{ page.secondary_header }}
 							</div>
 						{% endif %}
+						{% include '@usecaselabs/includes/mode.html.twig' %}
 					</div>
 				</div>
-
 			</header>
 		{% endif %}
 
