@@ -1,0 +1,25 @@
+uuid: 242712d5-8c9f-4dd0-9340-497254e3a093
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:call_to_action_block:b1218876-7bcb-4cef-b29d-307559817c7b'
+  module:
+    - block_content
+  theme:
+    - usecaselabs
+id: usecaselabs_registrationcta
+theme: usecaselabs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:b1218876-7bcb-4cef-b29d-307559817c7b'
+settings:
+  id: 'block_content:b1218876-7bcb-4cef-b29d-307559817c7b'
+  label: 'Registration CTA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
