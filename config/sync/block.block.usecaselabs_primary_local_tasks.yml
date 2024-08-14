@@ -8,8 +8,8 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: usecaselabs_primary_local_tasks
 theme: usecaselabs
-region: secondary_header
-weight: -3
+region: content
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

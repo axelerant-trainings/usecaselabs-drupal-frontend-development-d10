@@ -12,8 +12,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: usecaselabs_account_menu
 theme: usecaselabs
-region: primary_header
-weight: -5
+region: content
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

@@ -1,0 +1,112 @@
+.menu--main ul {
+  list-style: none;
+  margin: 0;
+}
+
+.menu--level-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.menu--level-1 > li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu--level-1 > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.menu__item--level-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__item--level-1.menu__item--has-children > a::after {
+  content: "";
+  display: block;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  height: 8px;
+  width: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.menu--main a {
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* Full-Width Submenu Styling */
+.menu--level-2 {
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100vw;
+  min-height: 250px;
+  background-color: #f8f8f8;
+  z-index: 1000;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu--level-3 .menu__link--level-3 {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Center the full-width container below the menu */
+.menu--level-2 > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu--level-1 > li:hover > .menu--level-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item--has-children:hover > a::after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.region--secondary-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.site-branding {
+  width: 250px;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
