@@ -1,0 +1,74 @@
+.page--article header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+.page--article header h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+.page--article header .author-name {
+  color: #000;
+  text-transform: capitalize;
+}
+.page--article header .author-name span {
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .page--article header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.page--article .node__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.page--article .header__left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.page--article .header__image {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.page--article .node__tags {
+  margin-top: 24px;
+}
+.page--article .node__tags ul {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+}
+.page--article .node__tags ul li a {
+  border-radius: 3px;
+  border: 2px solid #1475ad;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+.page--article .node__tags ul li a:hover {
+  background-color: #1475ad;
+  color: #fff;
+}

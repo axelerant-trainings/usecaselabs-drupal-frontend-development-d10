@@ -1,0 +1,7 @@
+<div class="node__tags">
+	<ul class="links field__items field--tags__items">
+		{% for item in items %}
+			<li{{ item.attributes.addClass('field--tags__item') }}>{{ item.content }}</li>
+		{% endfor %}
+	</ul>
+</div>
