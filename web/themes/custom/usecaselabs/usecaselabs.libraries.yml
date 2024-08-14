@@ -4,3 +4,10 @@ global:
       dist/css/global.css: {}
   js:
     dist/js/global.js: {}
+
+ucl-modal:
+  css:
+    theme:
+      dist/css/components/ucl-modal.css: {}
+  js:
+    dist/js//components/ucl-modal.js: {}

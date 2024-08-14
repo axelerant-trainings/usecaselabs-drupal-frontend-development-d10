@@ -1,0 +1,30 @@
+uuid: ac7dbe82-66da-43b8-89cc-604ad65f100d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:modal_dialog:2f9cf6a9-7ecc-4462-9658-16c01a338e34'
+  module:
+    - block_content
+    - system
+  theme:
+    - usecaselabs
+id: usecaselabs_websitedescription
+theme: usecaselabs
+region: primary_header
+weight: 0
+provider: null
+plugin: 'block_content:2f9cf6a9-7ecc-4462-9658-16c01a338e34'
+settings:
+  id: 'block_content:2f9cf6a9-7ecc-4462-9658-16c01a338e34'
+  label: 'Website description '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

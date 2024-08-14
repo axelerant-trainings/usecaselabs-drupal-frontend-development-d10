@@ -1,0 +1,52 @@
+uuid: 2e540f2e-835c-41e6-ab35-5d2dfdde4455
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal_dialog
+    - field.field.block_content.modal_dialog.body
+    - field.field.block_content.modal_dialog.field_link
+    - field.field.block_content.modal_dialog.field_title
+  module:
+    - link
+    - text
+id: block_content.modal_dialog.default
+targetEntityType: block_content
+bundle: modal_dialog
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 28
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
