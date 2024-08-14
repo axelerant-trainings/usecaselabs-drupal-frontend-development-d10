@@ -1,0 +1,11 @@
+.accessibility-mode-toggle {
+  cursor: pointer;
+  margin-top: 20px;
+  .toggle-icon {
+    background-image: url('../images/dark-mode-icon.png');
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
