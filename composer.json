@@ -19,6 +19,10 @@
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/crop": "^2.4",
+        "drupal/focal_point": "^2.1",
+        "drupal/image_widget_crop": "^2.4",
+        "drupal/paragraphs": "^1.18",
         "drush/drush": "^13.0"
     },
     "conflict": {

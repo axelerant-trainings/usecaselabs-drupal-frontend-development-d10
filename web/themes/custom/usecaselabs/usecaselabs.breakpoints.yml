@@ -1,21 +1,42 @@
-usecaselabs.mobile:
+usecaselabs.mobilemax:
   label: Mobile
   mediaQuery: 'all and (min-width: 0 and max-width: 767px)'
   weight: 0
   multipliers:
     - 1x
-    - 2x
-usecaselabs.tablet:
+usecaselabs.mobile:
+  label: Mobile
+  mediaQuery: 'all and (min-width: 0)'
+  weight: 0
+  multipliers:
+    - 1x
+usecaselabs.tabletmax:
   label: Tablet
   mediaQuery: 'all and (min-width: 768px) and (max-width: 1023px)'
   weight: 1
   multipliers:
     - 1x
-    - 2x
+usecaselabs.tablet:
+  label: Tablet
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+usecaselabs.desktopmax:
+  label: Desktop
+  mediaQuery: 'all and (min-width: 1024px) and (max-width: 1439px)'
+  weight: 2
+  multipliers:
+    - 1x
 usecaselabs.desktop:
   label: Desktop
   mediaQuery: 'all and (min-width: 1024px)'
   weight: 2
   multipliers:
     - 1x
-    - 2x
+usecaselabs.largedesktop:
+  label: Large Desktop
+  mediaQuery: 'all and (min-width: 1440px)'
+  weight: 3
+  multipliers:
+    - 1x

@@ -1,0 +1,24 @@
+.hero-banner {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hero-banner__content-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 20px;
+}
+
+.hero-banner__content-text * {
+  color: white;
+}
+
+.hero-banner__image-content::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(1.07deg, black 3.61%, rgba(0, 0, 0, 0) 25.66%), linear-gradient(89.37deg, black -30%, rgba(0, 0, 0, 0) 85%);
+  width: 100%;
+}

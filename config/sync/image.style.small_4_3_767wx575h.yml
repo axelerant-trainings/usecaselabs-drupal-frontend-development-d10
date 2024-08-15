@@ -1,0 +1,27 @@
+uuid: ede7caac-32fb-4ee7-8dbc-6ef3fe54815f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.portrait
+  module:
+    - crop
+    - focal_point
+name: small_4_3_767wx575h
+label: 'Small 4:3 (767Wx575H)'
+effects:
+  f199411e-cddb-4d99-a311-f1357ca2770f:
+    uuid: f199411e-cddb-4d99-a311-f1357ca2770f
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 767
+      height: 575
+      crop_type: focal_point
+  8e4ffd68-bc49-48bc-9f67-eb5887d1cdda:
+    uuid: 8e4ffd68-bc49-48bc-9f67-eb5887d1cdda
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: portrait
+      automatic_crop_provider: null

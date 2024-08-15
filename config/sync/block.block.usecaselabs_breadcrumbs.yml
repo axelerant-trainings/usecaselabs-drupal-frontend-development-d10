@@ -1,6 +1,6 @@
 uuid: 3eb98c28-c3e4-4836-9073-326d484b94d6
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: usecaselabs_breadcrumbs
 theme: usecaselabs
-region: hero
-weight: -7
+region: secondary_header
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -1,0 +1,11 @@
+uuid: b44b2b95-c62c-424c-ae81-5f1b64b4e501
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.hero_banner
+label: 'Hero Banner'
+description: ''
+targetEntityType: paragraph
+cache: true

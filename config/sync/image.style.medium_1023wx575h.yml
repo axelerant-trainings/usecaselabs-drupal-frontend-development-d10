@@ -1,0 +1,27 @@
+uuid: 51d396bb-0789-4738-a6f9-9071f6c3d82c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_banner
+  module:
+    - crop
+    - focal_point
+name: medium_1023wx575h
+label: Medium(1023Wx575H)
+effects:
+  8776dda7-f851-4624-b4fd-ffadc3f8257c:
+    uuid: 8776dda7-f851-4624-b4fd-ffadc3f8257c
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 1023
+      height: 575
+      crop_type: focal_point
+  f55e9471-b3a9-4cd9-a2ac-6e02a828b50d:
+    uuid: f55e9471-b3a9-4cd9-a2ac-6e02a828b50d
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_banner
+      automatic_crop_provider: null

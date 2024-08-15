@@ -1,0 +1,12 @@
+uuid: 28351c35-93f8-4dda-b01f-9e62b4ee4118
+langcode: en
+status: true
+dependencies: {  }
+label: Banner
+id: hero_banner
+description: 'Crop type for banners'
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

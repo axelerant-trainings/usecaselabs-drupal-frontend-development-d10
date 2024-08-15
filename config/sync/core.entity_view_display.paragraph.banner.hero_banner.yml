@@ -1,0 +1,32 @@
+uuid: a936c5e9-872f-448e-9def-cacf28a5411d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.hero_banner
+    - field.field.paragraph.banner.field_image
+    - field.field.paragraph.banner.field_sub_title
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.hero_banner
+targetEntityType: paragraph
+bundle: banner
+mode: hero_banner
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: hero_banner
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sub_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
