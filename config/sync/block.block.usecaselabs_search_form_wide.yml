@@ -11,7 +11,7 @@ _core:
 id: usecaselabs_search_form_wide
 theme: usecaselabs
 region: primary_header
-weight: -3
+weight: -6
 provider: null
 plugin: search_form_block
 settings:

@@ -9,7 +9,7 @@ _core:
 id: usecaselabs_secondary_local_tasks
 theme: usecaselabs
 region: secondary_header
-weight: -6
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
