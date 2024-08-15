@@ -1,0 +1,26 @@
+uuid: af1671ac-3399-4bfa-8e8b-3cdcf59c06d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_banner
+  module:
+    - crop
+name: xlarge_1920x1080
+label: 'X Large(1920Wx1080H)'
+effects:
+  1aeda455-5f63-4d9c-a0f4-c27310b61b7f:
+    uuid: 1aeda455-5f63-4d9c-a0f4-c27310b61b7f
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: hero_banner
+      automatic_crop_provider: null
+  646b6196-68b9-453c-ab1f-9c6c691a6b0c:
+    uuid: 646b6196-68b9-453c-ab1f-9c6c691a6b0c
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center

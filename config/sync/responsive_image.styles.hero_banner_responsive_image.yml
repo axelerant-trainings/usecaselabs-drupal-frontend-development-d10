@@ -1,0 +1,36 @@
+uuid: c4e09939-b61f-41b8-925c-4ed1989f1b7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_1439wx809h
+    - image.style.medium_1023wx575h
+    - image.style.small_4_3_767wx575h
+    - image.style.xlarge_1920x1080
+  theme:
+    - usecaselabs
+id: hero_banner_responsive_image
+label: 'Hero Banner Responsive Image'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: xlarge_1920x1080
+    breakpoint_id: usecaselabs.largedesktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: large_1439wx809h
+    breakpoint_id: usecaselabs.desktopmax
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium_1023wx575h
+    breakpoint_id: usecaselabs.tabletmax
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: small_4_3_767wx575h
+    breakpoint_id: usecaselabs.mobilemax
+    multiplier: 1x
+breakpoint_group: usecaselabs
+fallback_image_style: small_4_3_767wx575h

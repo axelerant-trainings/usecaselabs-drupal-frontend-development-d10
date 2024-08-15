@@ -1,0 +1,11 @@
+uuid: 146fa1ae-f2fd-4a15-b965-111a9a7221d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.medium_banner
+label: 'Medium Banner'
+description: ''
+targetEntityType: media
+cache: true

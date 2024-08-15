@@ -23,3 +23,18 @@ libraries-override:
   olivero/messages:
     js:
       js/messages.js: false
+
+  olivero/global-styling:
+    css:
+      layout:
+        css/layout/layout.css: false
+        css/layout/grid.css: false
+        css/layout/layout-content-narrow.css: false
+        css/layout/layout-content-medium.css: false
+        css/layout/layout-footer.css: false
+        css/layout/region.css: false
+        css/layout/region-content.css: false
+        css/layout/region-hero.css: false
+        css/layout/region-secondary-menu.css: false
+        css/layout/social-bar.css: false
+        css/layout/views.css: false

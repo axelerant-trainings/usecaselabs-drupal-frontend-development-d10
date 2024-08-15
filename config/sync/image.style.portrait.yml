@@ -1,0 +1,26 @@
+uuid: 563699a8-dd3a-40f0-bb52-88325977d324
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.portrait
+  module:
+    - crop
+name: portrait
+label: 'Portrait 4:3 (640x480)'
+effects:
+  51474083-6f20-454a-80f9-3d7a3ac3a28b:
+    uuid: 51474083-6f20-454a-80f9-3d7a3ac3a28b
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: portrait
+      automatic_crop_provider: null
+  3de16366-492b-4b9c-9c42-d85046f30b48:
+    uuid: 3de16366-492b-4b9c-9c42-d85046f30b48
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 640
+      height: 480
+      anchor: center-center

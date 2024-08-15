@@ -1,0 +1,21 @@
+.medium-banner {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-bottom: 30px;
+}
+
+.medium-banner__content-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 10px 40px;
+}
+
+.medium-banner__content-text {
+  text-align: center;
+}
+.medium-banner__content-text > * {
+  color: white;
+}

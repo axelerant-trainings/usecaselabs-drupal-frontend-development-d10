@@ -1,0 +1,26 @@
+uuid: 9b38eade-0f6f-4922-88ce-d2150ead5aee
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_banner
+  module:
+    - crop
+name: large_1439wx809h
+label: Large(1439Wx809H)
+effects:
+  dd9f8e64-89e4-422e-896a-073a0d389d55:
+    uuid: dd9f8e64-89e4-422e-896a-073a0d389d55
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_banner
+      automatic_crop_provider: null
+  73af6780-1099-47ee-adec-6a9fc58deb7a:
+    uuid: 73af6780-1099-47ee-adec-6a9fc58deb7a
+    id: image_scale_and_crop
+    weight: -8
+    data:
+      width: 1439
+      height: 809
+      anchor: center-center

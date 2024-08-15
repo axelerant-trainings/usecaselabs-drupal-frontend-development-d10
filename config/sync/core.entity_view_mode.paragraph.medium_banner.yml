@@ -1,0 +1,11 @@
+uuid: 6fe5959a-f79f-4590-9b49-d07715e26ea4
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.medium_banner
+label: 'Medium Banner'
+description: ''
+targetEntityType: paragraph
+cache: true

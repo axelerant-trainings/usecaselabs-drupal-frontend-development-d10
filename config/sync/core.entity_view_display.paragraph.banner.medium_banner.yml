@@ -1,0 +1,32 @@
+uuid: afad024a-b7bc-4b20-a528-7b64dcd15154
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.medium_banner
+    - field.field.paragraph.banner.field_image
+    - field.field.paragraph.banner.field_sub_title
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.medium_banner
+targetEntityType: paragraph
+bundle: banner
+mode: medium_banner
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: medium_banner
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sub_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

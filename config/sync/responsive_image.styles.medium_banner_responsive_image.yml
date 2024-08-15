@@ -1,0 +1,24 @@
+uuid: d8e47b60-d393-4c19-b1d8-13fb56acd213
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium_1023wx575h
+    - image.style.small_767wx431h
+  theme:
+    - usecaselabs
+id: medium_banner_responsive_image
+label: 'Medium Banner Responsive Image'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: medium_1023wx575h
+    breakpoint_id: usecaselabs.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: small_767wx431h
+    breakpoint_id: usecaselabs.mobile
+    multiplier: 1x
+breakpoint_group: usecaselabs
+fallback_image_style: small_767wx431h

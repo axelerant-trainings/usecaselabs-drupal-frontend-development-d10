@@ -4,3 +4,13 @@ global:
       dist/css/global.css: {}
   js:
     dist/js/global.js: {}
+
+hero-banner:
+  css:
+    theme:
+      dist/css/04-organisms/hero-banner.css: {}
+
+medium-banner:
+  css:
+    theme:
+      dist/css/04-organisms/medium-banner.css: {}

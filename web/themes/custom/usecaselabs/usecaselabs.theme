@@ -4,3 +4,19 @@
  * @file
  * Functions to support theming in the usecaselabs theme.
  */
+
+function usecaselabs_preprocess_paragraph__banner(&$variables) {
+  $paragraph = $variables['paragraph'];
+
+  // Check if the paragraph is inside a node
+  if ($paragraph->getParentEntity() && $paragraph->getParentEntity()->getEntityTypeId() == 'node') {
+    // Get the node entity
+    $node = $paragraph->getParentEntity();
+
+    // Get the node title
+    $node_title = $node->getTitle();
+
+    // Pass the node title to the paragraph template
+    $variables['parent_node_title'] = $node_title;
+  }
+}
