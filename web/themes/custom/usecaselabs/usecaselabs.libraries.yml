@@ -2,5 +2,6 @@ global:
   css:
     theme:
       dist/css/global.css: {}
+      dist/css/06-templates/layout-builder/usecaselabs-layout-builder.css: {}
   js:
     dist/js/global.js: {}

@@ -1,0 +1,132 @@
+// Import config
+@import '../../config.all';
+
+.usecaselabs-layout__column {
+  margin-bottom: 20px;
+}
+
+// one-column layout
+.usecaselabs-layout--one-column {
+  .usecaselabs-layout__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+
+  .usecaselabs-layout__column {
+    @media only screen and (min-width: $desktop) {
+      max-width: 77.5rem;
+      width: 100%;
+    }
+  }
+
+  &--narrow {
+    .usecaselabs-layout__column {
+      @media only screen and (min-width: $desktop) {
+        max-width: 38.25rem;
+      }
+    }
+  }
+}
+
+// two-col layout
+.usecaselabs-layout--two-column {
+  .usecaselabs-layout__container {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &--25-75 {
+    .usecaselabs-layout__container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .usecaselabs-layout__column--one {
+      @media only screen and (min-width: $desktop) {
+        width: 21.4375rem;
+        margin-right: 4.5rem;
+      }
+    }
+
+    .usecaselabs-layout__column--two .container {
+      @media only screen and (min-width: $desktop) {
+        padding: 0;
+      }
+    }
+
+    .usecaselabs-layout__column--two {
+      @media only screen and (min-width: $desktop) {
+        width: 57.8125rem;
+      }
+    }
+  }
+}
+
+// three col layout
+.usecaselabs-layout--three-column--25-50-25 {
+  .usecaselabs-layout__container {
+    width: 100%;
+    max-width: 90rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &.has-col-three:not(.has-col-one) {
+    .usecaselabs-layout__container--three-col--25-50-25 {
+      justify-content: flex-end;
+    }
+  }
+
+  &.has-col-two:not(.has-col-one):not(.has-col-three) {
+    .usecaselabs-layout__container--three-col--25-50-25 {
+      justify-content: center;
+    }
+  }
+
+  .usecaselabs-layout__column--one {
+    @media only screen and (min-width: $desktop) {
+      width: 21.375rem;
+      margin-right: 3.125rem;
+    }
+  }
+
+  .usecaselabs-layout__column--two {
+    @media only screen and (min-width: $desktop) {
+      width: 38.25rem;
+    }
+  }
+
+  .usecaselabs-layout__column--three {
+    @media only screen and (min-width: $desktop) {
+      width: 21.375rem;
+      margin-left: 3.125rem;
+    }
+  }
+}
+
+.usecaselabs-layout--three-column--25-50-25 {
+  .usecaselabs-layout__column--one {
+    @media only screen and (min-width: $desktop) {
+      margin-right: 4.5rem;
+    }
+  }
+  .usecaselabs-layout__column--two {
+    .container {
+      @media only screen and (min-width: $desktop) {
+        padding: 0;
+      }
+    }
+  }
+}

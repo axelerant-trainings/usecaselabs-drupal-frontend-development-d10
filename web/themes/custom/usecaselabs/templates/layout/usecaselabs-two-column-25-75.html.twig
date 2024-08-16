@@ -1,0 +1,38 @@
+{% if content %}
+
+	{% set classes = [
+    'usecaselabs-layout',
+    'usecaselabs-layout--two-column',
+    'usecaselabs-layout--two-column--25-75',
+    content.col_one.layout_builder_add_block ? 'usecaselabs-layout--with-add-block' : ''
+  ]
+%}
+
+	{% set grid_attributes = create_attribute().addClass('usecaselabs-layout__container usecaselabs-layout__container--two-col--25-75') %}
+	{% set grid_cols = [] %}
+
+	{% if content.col_one %}
+		{% set grid_cols = grid_cols|merge(['usecaselabs-layout__container--has-col-one']) %}
+	{% endif %}
+
+	{% if content.col_two %}
+		{% set grid_cols = grid_cols|merge(['usecaselabs-layout__container--has-col-two']) %}
+	{% endif %}
+
+	<div{{attributes.addClass(classes)}}>
+		<div {{ grid_attributes.addClass(grid_cols) }}>
+			{% if content.col_one %}
+				<div {{ region_attributes.col_one.addClass('usecaselabs-layout__column', 'usecaselabs-layout__column--one') }}>
+					{{ content.col_one }}
+				</div>
+			{% endif %}
+
+			{% if content.col_two %}
+				<div {{ region_attributes.col_two.addClass('usecaselabs-layout__column', 'usecaselabs-layout__column--two') }}>
+					{{ content.col_two }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+{% endif %}
