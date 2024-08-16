@@ -1,0 +1,22 @@
+uuid: 87e67713-053c-4e1a-bca2-be3de31db4cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - usecaselabs
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: usecaselabs_powered
+theme: usecaselabs
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

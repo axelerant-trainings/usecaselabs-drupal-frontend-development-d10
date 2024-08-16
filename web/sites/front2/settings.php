@@ -898,4 +898,4 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists($app_root . '/sites/defau
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default']['database'] = "front2";
-$settings['config_sync_directory'] = '../config/sync';
+$settings['config_sync_directory'] = $app_root . '/sites/front2/config/sync';
