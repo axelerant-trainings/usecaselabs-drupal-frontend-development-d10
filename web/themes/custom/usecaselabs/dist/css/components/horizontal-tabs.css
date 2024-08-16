@@ -1,0 +1,108 @@
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-mobile {
+  display: none;
+}
+.tabs .tab-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+  border-bottom: 2px solid #1475ad;
+  gap: 4px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.tabs .tab-title {
+  padding: 10px 20px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.tabs .tab-title.active {
+  border-color: #1475ad #1475ad transparent;
+  background-color: #1475ad;
+  color: #fff;
+}
+.tabs .tab-contents {
+  padding: 20px;
+  border: 1px solid #1475ad;
+  border-top: none;
+}
+.tabs .tab-content {
+  display: none;
+}
+.tabs .tab-content.active {
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .tabs .tabs-desktop {
+    display: none;
+  }
+  .tabs .tabs-mobile {
+    display: block;
+  }
+  .tabs .tab-titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs .tab-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tabs .tab-title::after {
+    content: "";
+    display: block;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    height: 8px;
+    width: 8px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  .tabs .tab-title.active {
+    border-color: #ccc;
+  }
+  .tabs .tab-title.active::after {
+    -webkit-transform: rotate(225deg) !important;
+            transform: rotate(225deg) !important;
+  }
+  .tabs .tab-contents {
+    padding: 0;
+    border: none;
+  }
+  .tabs .tab-content {
+    padding: 20px;
+    border: 1px solid #1475ad;
+    display: none;
+  }
+  .tabs .tab-title.active + .tab-content {
+    display: block;
+  }
+}

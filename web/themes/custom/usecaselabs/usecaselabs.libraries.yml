@@ -4,3 +4,10 @@ global:
       dist/css/global.css: {}
   js:
     dist/js/global.js: {}
+
+horizontal-tabs:
+  css:
+    theme:
+      dist/css/components/horizontal-tabs.css: {}
+  js:
+    dist/js/components/horizontal-tabs.js: {}
