@@ -29,7 +29,7 @@ ddev drush entity:delete shortcut_set --uri=front2
 ddev drush cset system.site uuid 3e9cc1f7-46aa-43c2-bdc3-8afab813dc62 --uri=front2
 ddev drush cim -y --uri=front2
 ddev drush cr --uri=front2
-ddev launch --uri=front2
+Vist : https://front2.ddev.site/
 ddev drush uli --uri=front2
 
 ```
