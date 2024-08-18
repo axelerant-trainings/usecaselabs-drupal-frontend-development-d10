@@ -1,0 +1,19 @@
+uuid: e33df13d-3ec5-4b15-90cc-9dbf55333532
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.storage.block_content.field_title
+id: block_content.cta.field_title
+field_name: field_title
+entity_type: block_content
+bundle: cta
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

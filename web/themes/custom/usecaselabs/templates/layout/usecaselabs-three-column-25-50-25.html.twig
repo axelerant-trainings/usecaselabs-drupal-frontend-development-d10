@@ -1,0 +1,45 @@
+{% if content %}
+
+	{% set grid_cols = [] %}
+
+	{% if content.col_one %}
+		{% set grid_cols = grid_cols|merge(['has-col-one']) %}
+	{% endif %}
+
+	{% if content.col_two %}
+		{% set grid_cols = grid_cols|merge(['has-col-two']) %}
+	{% endif %}
+
+	{% if content.col_three %}
+		{% set grid_cols = grid_cols|merge(['has-col-three']) %}
+	{% endif %}
+
+	{% set classes = [
+    'usecaselabs-layout',
+    'usecaselabs-layout--three-column',
+    'usecaselabs-layout--three-column--25-50-25',
+    content.col_one.layout_builder_add_block ? 'usecaselabs-layout--with-add-block' : ''
+  ]
+%}
+
+	{% set grid_attributes = create_attribute().addClass('usecaselabs-layout__container', 'usecaselabs-layout__container--three-col--25-50-25') %}
+
+	<div{{attributes.addClass(classes).addClass(grid_cols)}}>
+		<div {{ grid_attributes }}>
+			<div {{ region_attributes.col_one.addClass('usecaselabs-layout__column', 'usecaselabs-layout__column--one') }}>
+				{{ content.col_one }}
+			</div>
+
+			<div {{ region_attributes.col_two.addClass('usecaselabs-layout__column', 'usecaselabs-layout__column--two') }}>
+				{{ content.col_two }}
+			</div>
+
+			{% if content.col_three %}
+				<div {{ region_attributes.col_three.addClass('usecaselabs-layout__column', 'usecaselabs-layout__column--three') }}>
+					{{ content.col_three }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+{% endif %}

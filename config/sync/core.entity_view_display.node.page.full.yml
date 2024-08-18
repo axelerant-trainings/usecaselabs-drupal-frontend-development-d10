@@ -1,0 +1,146 @@
+uuid: 5fcf381b-8926-455d-952e-d7a2013ed513
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+    - views.view.all_articles
+  content:
+    - 'block_content:basic:c052952b-da12-4535-869d-52b86a9e66f2'
+    - 'block_content:cta:82a94b40-0256-4ea5-8ae6-e7caf0adb78a'
+  module:
+    - block_content
+    - layout_builder
+    - text
+    - user
+    - views
+  theme:
+    - usecaselabs
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: usecaselabs_one_column_narrow
+        layout_settings:
+          label: 'One column'
+          context_mapping: {  }
+        components:
+          8bb47d9b-7080-494d-a4b3-af7f00fb4366:
+            uuid: 8bb47d9b-7080-494d-a4b3-af7f00fb4366
+            region: col_one
+            configuration:
+              id: 'field_block:node:page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: usecaselabs_three_col_25_50_25
+        layout_settings:
+          label: 'Three column'
+          context_mapping: {  }
+        components:
+          58cbc1e7-2769-4703-a30c-4c6fc7ca3b02:
+            uuid: 58cbc1e7-2769-4703-a30c-4c6fc7ca3b02
+            region: col_two
+            configuration:
+              id: 'field_block:node:page:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          3abe76e4-445a-4ba1-a996-014244c794d0:
+            uuid: 3abe76e4-445a-4ba1-a996-014244c794d0
+            region: col_three
+            configuration:
+              id: 'block_content:c052952b-da12-4535-869d-52b86a9e66f2'
+              label: 'Block one'
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          0525c504-929d-4545-8edc-a6aa30f2b19e:
+            uuid: 0525c504-929d-4545-8edc-a6aa30f2b19e
+            region: col_one
+            configuration:
+              id: 'block_content:82a94b40-0256-4ea5-8ae6-e7caf0adb78a'
+              label: 'CTA one'
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: usecaselabs_one_column_narrow
+        layout_settings:
+          label: 'One column narrow'
+          context_mapping: {  }
+        components:
+          30c4a7bb-c7b9-4962-9fb6-d9eb70159d2d:
+            uuid: 30c4a7bb-c7b9-4962-9fb6-d9eb70159d2d
+            region: col_one
+            configuration:
+              id: 'views_block:all_articles-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  layout_builder__layout: true

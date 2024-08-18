@@ -1,0 +1,23 @@
+{% if content %}
+
+{% set classes = [
+    'usecaselabs-layout',
+    'usecaselabs-layout--one-column',
+    'usecaselabs-layout--one-column--narrow',
+    content.col_one.layout_builder_add_block ? 'usecaselabs-layout--with-add-block' : ''
+  ]
+%}
+
+{% set grid_cols = "usecaselabs-layout__container usecaselabs-layout__container--has-one-col" %}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="{{ grid_cols }}">
+    {% if content.col_one %}
+      <div {{ region_attributes.col_one.addClass('usecaselabs-layout__column') }}>
+        {{ content.col_one }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% endif %}

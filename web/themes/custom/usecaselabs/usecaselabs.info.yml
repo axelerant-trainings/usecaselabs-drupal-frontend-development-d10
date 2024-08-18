@@ -19,7 +19,3 @@ libraries-override:
   olivero/navigation-base:
     js:
       js/navigation-utils.js: false
-
-  olivero/messages:
-    js:
-      js/messages.js: false
