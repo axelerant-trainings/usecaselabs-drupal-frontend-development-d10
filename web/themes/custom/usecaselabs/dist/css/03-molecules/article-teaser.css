@@ -1,0 +1,42 @@
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  .featured-card {
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+.article-teaser__caption {
+  margin-top: 15px;
+}
+
+.feature-card__description {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .standard-card {
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.article-teaser__title {
+  font-size: 24px;
+}
+@media only screen and (min-width: 700px) {
+  .article-teaser__title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .article-teaser__title {
+    font-size: 32px;
+  }
+}

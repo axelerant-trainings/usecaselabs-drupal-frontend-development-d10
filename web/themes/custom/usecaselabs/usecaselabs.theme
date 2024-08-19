@@ -4,3 +4,45 @@
  * @file
  * Functions to support theming in the usecaselabs theme.
  */
+
+/**
+ * Implements hook_theme_suggestions_views_view_unformatted_alter().
+ */
+function usecaselabs_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables) {
+  $id = $variables['view']->id();
+  $display = $variables["view"]->current_display;
+  $suggestions[] = "views_view_unformatted__" . $id . "_" . $display;
+}
+
+/**
+ * Implements hook_preprocess_view().
+ */
+function usecaselabs_preprocess_views_view(&$variables) {
+  // Check if this is the specific view we want to modify
+  if ($variables['view']->id() == 'all_articles' && $variables["view"]->current_display == 'page_1') {
+    // Loop through each result in the view
+    foreach ($variables['view']->result as $index => $row) {
+      // Add a custom property to the node entity
+      if ($index == 0) {
+        // Set the custom property(_custom_is_featured) to TRUE for the first row
+        $variables['view']->result[$index]->_entity->_custom_is_featured = TRUE;
+      }
+      else {
+        // Set the custom property to FALSE for other rows
+        $variables['view']->result[$index]->_entity->_custom_is_featured = FALSE;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function usecaselabs_preprocess_node(&$variables) {
+  // Ensure we are working with the article teaser view mode
+  if ($variables['node']->bundle() == 'article' && $variables['view_mode'] == 'teaser') {
+    $node = $variables['node'];
+    // Check if our custom property exists and assign it to a variable
+    $variables['is_featured'] = !empty($node->_custom_is_featured);
+  }
+}
