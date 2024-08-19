@@ -1,0 +1,27 @@
+.standard-cards-block {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 768px) {
+  .standard-cards-block {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .standard-cards-block {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.view-row--standard .article-teaser__image-wrapper {
+  width: 274px;
+  height: 274px;
+}
+.view-row--standard .article-teaser__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

@@ -4,3 +4,13 @@ global:
       dist/css/global.css: {}
   js:
     dist/js/global.js: {}
+
+article-teaser:
+  css:
+    theme:
+      dist/css/03-molecules/article-teaser.css: {}
+
+view-all-articles:
+  css:
+    theme:
+      dist/css/04-organisms/view-all-articles.css: {}
