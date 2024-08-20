@@ -1,0 +1,34 @@
+.page-wrapper {
+  max-width: unset;
+}
+
+.site-header__inner {
+  width: unset;
+}
+
+.container {
+  max-width: unset;
+}
+
+.view-sample-article .view-content {
+  grid-template-columns: auto auto auto;
+}
+@media only screen and (max-width: 767px) {
+  .view-sample-article .view-content {
+    grid-template-columns: auto;
+  }
+}
+.view .views-field-field-image {
+  height: 300px;
+  width: 100%;
+}
+.view .views-field-field-image .field-content {
+  height: 100%;
+  width: 100%;
+}
+.view .views-field-field-image .field-content img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
