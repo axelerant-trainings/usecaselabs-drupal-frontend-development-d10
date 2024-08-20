@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Usecaselab's theme implementation to display a node.
+ *
+ * @see template_preprocess_node()
+ */
+#}
+
+{% set layout = layout ? 'layout--' ~ layout|clean_class %}
+
+{% set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    layout ? 'grid-full',
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'node--page-' ~ node.getTitle(),
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+  <div{{ content_attributes.addClass('node__content', layout) }}>
+    {# Comments not part of content, so they won't inherit .text-content styles. #}
+    {{ content|without('comment') }}
+  </div>
+</article>

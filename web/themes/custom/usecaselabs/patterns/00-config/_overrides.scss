@@ -1,3 +1,5 @@
+// This file contains all the overrides required for the theming of custom theme.
+
 .page-wrapper {
   max-width: unset;
 }
@@ -8,12 +10,4 @@
 
 .container {
   max-width: unset;
-}
-
-.page-404-error-wrapper .main-content__container {
-  padding-top: 0;
-}
-
-.node--page-404 {
-  text-align: center;
 }
