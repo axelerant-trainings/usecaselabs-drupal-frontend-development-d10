@@ -4,3 +4,8 @@ global:
       dist/css/global.css: {}
   js:
     dist/js/global.js: {}
+
+view-gallery:
+  css:
+    theme:
+      dist/css/04-organisms/view-gallery.css: {}
