@@ -1,0 +1,94 @@
+.slick-slider-container {
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .slick-arrow,
+  .prev-btn,
+  .next-btn {
+    font-family: slick;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    outline: 0;
+    background: 0 0;
+    z-index: 9999;
+  }
+
+  .slick-arrow {
+    .slick-next-icon,
+    .slick-prev-icon {
+      &:before {
+        font-size: 48px;
+        line-height: 1;
+        color: #1475ad;
+      }
+    }
+
+    &:focus {
+      outline: solid 2px #1475ad;
+      outline-offset: 2px;
+    }
+  }
+
+  .prev-btn,
+  .next-btn {
+    &:before {
+      font-size: 48px;
+      line-height: 1;
+      color: #1475ad;
+    }
+  }
+
+  .next-btn:before {
+    content: '→';
+  }
+
+  .prev-btn:before {
+    content: '←';
+  }
+
+  .slick-arrow:focus {
+    .slick-next-icon,
+    .slick-prev-icon {
+      color: #1475ad;
+    }
+  }
+
+  .slick-autoplay-toggle-button:focus {
+    color: #1475ad;
+  }
+
+  .slick-slide {
+    margin: 0 12px;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .slick-dots li button:focus .slick-dot-icon:before {
+    color: #1475ad;
+  }
+
+  .slick-dots li.slick-active button .slick-dot-icon {
+    color: #1475ad;
+  }
+}

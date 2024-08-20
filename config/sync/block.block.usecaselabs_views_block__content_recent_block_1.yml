@@ -1,0 +1,24 @@
+uuid: fb7ca21b-c01b-49c2-92c0-9cc32b2c84a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - views
+  theme:
+    - usecaselabs
+id: usecaselabs_views_block__content_recent_block_1
+theme: usecaselabs
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

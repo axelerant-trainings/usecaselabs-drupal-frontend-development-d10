@@ -1,0 +1,82 @@
+.slick-slider-container .btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .slick-slider-container .btn-wrap {
+    display: none;
+  }
+}
+.slick-slider-container .slick-arrow,
+.slick-slider-container .prev-btn,
+.slick-slider-container .next-btn {
+  font-family: slick;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  outline: 0;
+  background: 0 0;
+  z-index: 9999;
+}
+.slick-slider-container .slick-arrow .slick-next-icon:before,
+.slick-slider-container .slick-arrow .slick-prev-icon:before {
+  font-size: 48px;
+  line-height: 1;
+  color: #1475ad;
+}
+.slick-slider-container .slick-arrow:focus {
+  outline: solid 2px #1475ad;
+  outline-offset: 2px;
+}
+.slick-slider-container .prev-btn:before,
+.slick-slider-container .next-btn:before {
+  font-size: 48px;
+  line-height: 1;
+  color: #1475ad;
+}
+.slick-slider-container .next-btn:before {
+  content: "→";
+}
+.slick-slider-container .prev-btn:before {
+  content: "←";
+}
+.slick-slider-container .slick-arrow:focus .slick-next-icon,
+.slick-slider-container .slick-arrow:focus .slick-prev-icon {
+  color: #1475ad;
+}
+.slick-slider-container .slick-autoplay-toggle-button:focus {
+  color: #1475ad;
+}
+.slick-slider-container .slick-slide {
+  margin: 0 12px;
+}
+@media only screen and (max-width: 767px) {
+  .slick-slider-container .slick-slide {
+    margin: 0;
+  }
+}
+.slick-slider-container .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slick-slider-container .slick-dots li button:focus .slick-dot-icon:before {
+  color: #1475ad;
+}
+.slick-slider-container .slick-dots li.slick-active button .slick-dot-icon {
+  color: #1475ad;
+}
