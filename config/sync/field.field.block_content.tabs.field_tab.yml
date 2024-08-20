@@ -1,0 +1,31 @@
+uuid: 666efc33-29fd-4b30-8bbb-50d7d82ffa4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs
+    - field.storage.block_content.field_tab
+    - paragraphs.paragraphs_type.tab
+  module:
+    - entity_reference_revisions
+id: block_content.tabs.field_tab
+field_name: field_tab
+entity_type: block_content
+bundle: tabs
+label: tab
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tab: tab
+    negate: 0
+    target_bundles_drag_drop:
+      tab:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

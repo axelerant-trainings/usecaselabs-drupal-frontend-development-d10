@@ -1,0 +1,8 @@
+uuid: 3157449c-c6b2-4318-828d-dd0d79501c1d
+langcode: en
+status: true
+dependencies: {  }
+id: tabs
+label: Tabs
+revision: false
+description: 'A simple tabs component'
