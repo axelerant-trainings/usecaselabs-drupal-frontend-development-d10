@@ -33,9 +33,13 @@
       &:before {
         font-size: 48px;
         line-height: 1;
-        opacity: 0.75;
         color: #1475ad;
       }
+    }
+
+    &:focus {
+      outline: solid 2px #1475ad;
+      outline-offset: 2px;
     }
   }
 
@@ -44,7 +48,6 @@
     &:before {
       font-size: 48px;
       line-height: 1;
-      opacity: 0.75;
       color: #1475ad;
     }
   }
@@ -66,6 +69,19 @@
 
   .slick-autoplay-toggle-button:focus {
     color: #1475ad;
+  }
+
+  .slick-slide {
+    margin: 0 12px;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .slick-dots li button:focus .slick-dot-icon:before {

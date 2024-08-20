@@ -33,14 +33,16 @@
 .slick-slider-container .slick-arrow .slick-prev-icon:before {
   font-size: 48px;
   line-height: 1;
-  opacity: 0.75;
   color: #1475ad;
+}
+.slick-slider-container .slick-arrow:focus {
+  outline: solid 2px #1475ad;
+  outline-offset: 2px;
 }
 .slick-slider-container .prev-btn:before,
 .slick-slider-container .next-btn:before {
   font-size: 48px;
   line-height: 1;
-  opacity: 0.75;
   color: #1475ad;
 }
 .slick-slider-container .next-btn:before {
@@ -55,6 +57,22 @@
 }
 .slick-slider-container .slick-autoplay-toggle-button:focus {
   color: #1475ad;
+}
+.slick-slider-container .slick-slide {
+  margin: 0 12px;
+}
+@media only screen and (max-width: 767px) {
+  .slick-slider-container .slick-slide {
+    margin: 0;
+  }
+}
+.slick-slider-container .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .slick-slider-container .slick-dots li button:focus .slick-dot-icon:before {
   color: #1475ad;

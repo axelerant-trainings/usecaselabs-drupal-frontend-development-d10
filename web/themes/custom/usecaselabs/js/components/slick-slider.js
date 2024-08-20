@@ -7,7 +7,6 @@
   Drupal.behaviors.slick = {
     attach: function (context, settings) {
       $('.slick-slider').slick({
-        accessibility: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         variableWidth: false,
