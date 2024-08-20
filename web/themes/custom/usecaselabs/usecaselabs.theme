@@ -4,3 +4,11 @@
  * @file
  * Functions to support theming in the usecaselabs theme.
  */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function usecaselabs_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  $node_title = \Drupal::transliteration()->transliterate($variables['elements']['#node']->getTitle());
+  $suggestions[] = 'node__' . preg_replace('/[^a-z0-9_]+/', '_', mb_strtolower($node_title));
+}
