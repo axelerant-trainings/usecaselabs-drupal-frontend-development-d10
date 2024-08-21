@@ -1,0 +1,21 @@
+uuid: a24a2d62-34d5-4fac-925b-400d9e8ac7e4
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_816x816
+label: 'Gallery (816x816)'
+effects:
+  a377c24d-7313-4eaa-a0a8-b01808fe3d45:
+    uuid: a377c24d-7313-4eaa-a0a8-b01808fe3d45
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 816
+      height: 816
+      anchor: center-center
+  12ed5e8b-2929-42f4-ad4e-064805dd1a0f:
+    uuid: 12ed5e8b-2929-42f4-ad4e-064805dd1a0f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

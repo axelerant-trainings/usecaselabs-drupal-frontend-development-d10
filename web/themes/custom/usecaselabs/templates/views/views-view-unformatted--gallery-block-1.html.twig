@@ -1,0 +1,83 @@
+{#
+/**
+ * @file
+ * Usecaselabs theme implementation to display a view of unformatted rows of Gallery.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('usecaselabs/view-gallery') }}
+
+{% if title %}
+	<h3>{{ title }}</h3>
+{% endif %}
+
+{% set row_classes = [
+    default_row_class ? 'views-row',
+] %}
+
+{% set totalrows = rows|length %}
+{% set current_index = 0 %}
+
+<div class="gallery-wrapper">
+  {% for _ in 0..(totalrows // 8) %}
+    {# First row #}
+    {% if current_index < totalrows %}
+      <div class="views-row-wrapper row-wrapper-1">
+        {# First column #}
+        <div class="row-inner-col row-inner-1-col-1 coh-col-lg-4">
+          {% for row in rows|slice(current_index, 2) %}
+            <div{{ row.attributes.addClass(row_classes,'row-inner-1') }}>
+              {{- row.content -}}
+            </div>
+            {% set current_index = current_index + 1 %}
+          {% endfor %}
+        </div>
+        {# Second column #}
+        <div class="row-inner-col row-inner-1-col-2 coh-col-lg-8">
+          {% for row in rows|slice(current_index, 1) %}
+            <div{{ row.attributes.addClass(row_classes,'row-inner-1') }}>
+              {{- row.content -}}
+            </div>
+            {% set current_index = current_index + 1 %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {# Second row #}
+    {% if current_index < totalrows %}
+      <div class="views-row-wrapper row-wrapper-2">
+        {% for row in rows|slice(current_index, 2) %}
+          <div{{ row.attributes.addClass(row_classes,'coh-col-lg-6 row-inner-2') }}>
+            {{- row.content -}}
+          </div>
+          {% set current_index = current_index + 1 %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {# Third row #}
+    {% if current_index < totalrows %}
+      <div class="views-row-wrapper row-wrapper-3">
+        {% for row in rows|slice(current_index, 3) %}
+          <div{{ row.attributes.addClass(row_classes,'coh-col-xl-4 row-inner-3') }}>
+            {{- row.content -}}
+          </div>
+          {% set current_index = current_index + 1 %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div> {# End gallery wrapper #}
