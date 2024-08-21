@@ -1,0 +1,25 @@
+uuid: 4a8199d9-cff5-4848-916c-020f68160482
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:tabs:abb5731f-3746-46df-9fc2-f16ba92c4e77'
+  module:
+    - block_content
+  theme:
+    - usecaselabs
+id: usecaselabs_horizontaltabs
+theme: usecaselabs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:abb5731f-3746-46df-9fc2-f16ba92c4e77'
+settings:
+  id: 'block_content:abb5731f-3746-46df-9fc2-f16ba92c4e77'
+  label: 'Horizontal Tabs'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
