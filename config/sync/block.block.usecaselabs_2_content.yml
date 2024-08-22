@@ -1,0 +1,22 @@
+uuid: 9c7ed1b8-dadd-4c79-ac86-91418cd12e59
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - usecaselabs_2
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: usecaselabs_2_content
+theme: usecaselabs_2
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

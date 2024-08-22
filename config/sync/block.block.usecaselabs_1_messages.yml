@@ -1,0 +1,22 @@
+uuid: f1f71969-855c-4ab9-8dd4-ae7d183cd478
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - usecaselabs_1
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: usecaselabs_1_messages
+theme: usecaselabs_1
+region: secondary_header
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

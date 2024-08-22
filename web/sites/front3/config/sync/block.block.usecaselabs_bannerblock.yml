@@ -1,0 +1,25 @@
+uuid: caffacd6-c956-49da-b193-b8d3a8dd2806
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:05161f96-7dd0-4d7a-9e8e-32e5b1598966'
+  module:
+    - block_content
+  theme:
+    - usecaselabs
+id: usecaselabs_bannerblock
+theme: usecaselabs
+region: hero
+weight: -8
+provider: null
+plugin: 'block_content:05161f96-7dd0-4d7a-9e8e-32e5b1598966'
+settings:
+  id: 'block_content:05161f96-7dd0-4d7a-9e8e-32e5b1598966'
+  label: 'Banner Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

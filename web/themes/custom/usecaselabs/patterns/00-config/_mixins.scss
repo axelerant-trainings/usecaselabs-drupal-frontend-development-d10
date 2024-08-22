@@ -1,0 +1,11 @@
+// Define mixins scss variables here.
+@mixin linear-gradient(
+  $direction: top,
+  $colors: $brand-site-color $brand-white
+) {
+  $list: ();
+  @for $i from 1 through length($colors) {
+    $list: append($list, nth($colors, $i), comma);
+  }
+  background: linear-gradient($direction, $list);
+}

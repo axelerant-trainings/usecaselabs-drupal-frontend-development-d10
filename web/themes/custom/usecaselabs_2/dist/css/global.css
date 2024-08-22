@@ -1,0 +1,38 @@
+/**
+  * Named Colors.
+  */
+/* Black */
+/* White */
+/* Red */
+/* Gold */
+/* Green */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.site-header__inner {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a6f0c7),
+    to(#f9efef)
+  );
+  background: linear-gradient(top, #a6f0c7, #f9efef);
+}
+
+.region--hero {
+  background: #a6f0c7;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-content,
+.cke_editable,
+.text-content blockquote,
+.cke_editable blockquote {
+  font-family: 'Raleway';
+}

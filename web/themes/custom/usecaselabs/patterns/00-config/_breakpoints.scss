@@ -1,3 +1,12 @@
-$mobile: 0 767px;
-$tablet: 768px 1023px;
-$desktop: 1024px;
+@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+$xs: 0;
+$md: 768px; // (min-width: 768px)
+$lg: 1024px; // (min-width: 1024px)
+
+// for min and max width
+$mobile: $xs ($md - 1); // 0px - 767px
+$tablet: $md ($lg - 1); // 768px - 1023px
+$desktop: $lg; // 1024px - onwards
+
+// for only max width.
+$md-down: $xs ($lg - 1); // 0 - 1023px
