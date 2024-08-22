@@ -2,8 +2,11 @@
   &-sample-article {
     .view-content {
       grid-template-columns: auto auto auto;
-      @media only screen and (max-width: 767px) {
-        grid-template-columns: auto;
+      @include breakpoint($tablet) {
+        grid-template-columns: auto auto;
+      }
+      @include breakpoint($mobile) {
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -23,5 +26,29 @@
         }
       }
     }
+
+    &-title {
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .field--name-field-image {
+    height: 300px;
+    width: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .text-content,
+  .cke_editable {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: var(--font-sans);
   }
 }
