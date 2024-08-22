@@ -56,3 +56,4 @@
  * @see https://www.drupal.org/docs/getting-started/multisite-drupal
  */
 $sites['front2.ddev.site'] = 'front2';
+$sites['front3.ddev.site'] = 'front3';
