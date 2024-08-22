@@ -18,7 +18,40 @@ Verify if ssh-keys are set or follow [Generate new SSH Keys](https://docs.github
 ls ~/.ssh
 ```
 
+## Multi-site local Setup
+NOTE : This step needs to be followed only if you already have the default site settled up and working. If not, please refer to the Local setup section.
 
+After switching/merging to this current branch i.e. LDT-762 where Multi-site setup is configured, please run below command :
+
+```
+ddev restart
+```
+
+After doing the restart, install the site front2 by following below commands :
+
+```
+ddev drush si --uri=front2
+ddev drush entity:delete shortcut_set --uri=front2
+ddev drush cset system.site uuid 3e9cc1f7-46aa-43c2-bdc3-8afab813dc62 --uri=front2
+ddev drush cim -y --uri=front2
+ddev drush cr --uri=front2
+Vist : https://front2.ddev.site/
+ddev drush uli --uri=front2
+
+```
+
+Similarly, install the site front3 by following below commands :
+
+```
+ddev drush si --uri=front3
+ddev drush entity:delete shortcut_set --uri=front3
+ddev drush cset system.site uuid 3e9cc1f7-46aa-43c2-bdc3-8afab813dc62 --uri=front3
+ddev drush cim -y --uri=front3
+ddev drush cr --uri=front3
+Vist : https://front3.ddev.site/
+ddev drush uli --uri=front3
+
+```
 
 ## Local Setup
 Clone this repository ([learn more](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))
