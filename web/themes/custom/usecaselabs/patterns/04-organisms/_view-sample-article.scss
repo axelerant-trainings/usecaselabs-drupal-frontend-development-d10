@@ -1,0 +1,54 @@
+.view {
+  &-sample-article {
+    .view-content {
+      grid-template-columns: auto auto auto;
+      @include breakpoint($tablet) {
+        grid-template-columns: auto auto;
+      }
+      @include breakpoint($mobile) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .views-field {
+    &-field-image {
+      height: 300px;
+      width: 100%;
+
+      .field-content {
+        height: 100%;
+        width: 100%;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    &-title {
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .field--name-field-image {
+    height: 300px;
+    width: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .text-content,
+  .cke_editable {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: var(--font-sans);
+  }
+}

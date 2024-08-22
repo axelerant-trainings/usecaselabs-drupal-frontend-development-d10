@@ -1,0 +1,101 @@
+.page-wrapper {
+  max-width: unset;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+  padding-inline: var(--container-padding);
+}
+
+.site-header__inner {
+  width: 100%;
+}
+
+.site-branding {
+  min-height: unset;
+}
+
+.site-header__inner__container {
+  display: block;
+  padding-inline: var(--container-padding);
+}
+
+.region--primary-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .region--primary-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.header-nav {
+  background-color: transparent;
+  -webkit-box-pack: unset !important;
+  -ms-flex-pack: unset !important;
+  justify-content: unset !important;
+}
+
+.site-footer__inner {
+  padding-block: var(--sp2);
+  padding-inline: var(--container-padding);
+}
+
+.view-sample-article .view-content {
+  grid-template-columns: auto auto auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .view-sample-article .view-content {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .view-sample-article .view-content {
+    grid-template-columns: 1fr;
+  }
+}
+.view .views-field-field-image {
+  height: 300px;
+  width: 100%;
+}
+.view .views-field-field-image .field-content {
+  height: 100%;
+  width: 100%;
+}
+.view .views-field-field-image .field-content img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.view .views-field-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.view .field--name-field-image {
+  height: 300px;
+  width: 100%;
+}
+.view .field--name-field-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.view .text-content,
+.view .cke_editable {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: var(--font-sans);
+}

@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_link
     - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
   module:
     - comment
     - image
+    - link
     - text
     - user
 _core:
@@ -48,6 +50,18 @@ content:
         attribute: eager
     third_party_settings: {  }
     weight: -1
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_tags:
     type: entity_reference_label
