@@ -9,5 +9,5 @@
  * Implements hook_theme_registry_alter
  */
 function custom_errors_theme_registry_alter(&$theme_registry) {
-  $theme_registry['page__404']['path'] = \Drupal::service('extension.list.module')->getPath('custom_errors');
+  $theme_registry['page__404']['path'] = \Drupal::service('extension.list.module')->getPath('custom_errors') . '/templates';
 }
