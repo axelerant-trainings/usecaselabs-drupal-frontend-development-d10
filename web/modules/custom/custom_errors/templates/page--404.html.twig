@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Usecaselab's custom module implementation to display a single page.
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+{{ attach_library('custom_errors/error_page_styling') }}
+
+<div id="page-wrapper" class="page-new-404-error-wrapper">
+	<div id="page">
+
+		{% if page.primary_header or page.secondary_header %}
+			<header id="header" class="site-header" data-drupal-selector="site-header" role="banner">
+
+				<div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+					<div class="container site-header__inner__container">
+
+						{{ page.primary_header }}
+
+						{% if page.secondary_header %}
+							<div class="mobile-buttons" data-drupal-selector="mobile-buttons">
+								<button class="mobile-nav-button" data-drupal-selector="mobile-nav-button" aria-label="{{ 'Main Menu'|t }}" aria-controls="header-nav" aria-expanded="false">
+									<span class="mobile-nav-button__label">{{ 'Menu'|t }}</span>
+									<span class="mobile-nav-button__icon"></span>
+								</button>
+							</div>
+							<div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
+								{{ page.secondary_header }}
+							</div>
+						{% endif %}
+					</div>
+				</div>
+
+			</header>
+		{% endif %}
+
+		<div id="main-wrapper" class="layout-main-wrapper layout-container">
+			<div id="main" class="layout-main">
+				<div class="main-content">
+					<a id="main-content" tabindex="-1"></a>
+					<div class="main-content__container container">
+            <main role="main">
+							<article class="node node--type-page node--view-mode-full node--page-404">
+                <div class="node__content">
+                  <div class="text-content clearfix field field--name-body field--type-text-with-summary field--label-hidden field__item">
+										<p>This the test 404 page created with in the module which overrides the theme page 404 template.</p>
+										<p>Don’t worry, let’s head back to our homepage.</p>
+										<p><a href="/">BACK TO HOME</a></p>
+									</div>
+                </div>
+              </article>
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="site-footer">
+			<div class="site-footer__inner container">
+				{{ page.footer }}
+			</div>
+		</footer>
+
+	</div>
+</div>

@@ -24,4 +24,10 @@ settings:
   level: 1
   depth: 2
   expand_all_items: true
-visibility: {  }
+visibility:
+  response_status:
+    id: response_status
+    negate: false
+    status_codes:
+      - 200
+      - 404

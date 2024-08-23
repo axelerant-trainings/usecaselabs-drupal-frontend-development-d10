@@ -1,0 +1,4 @@
+error_page_styling:
+  css:
+    theme:
+      css/style.css: {}
