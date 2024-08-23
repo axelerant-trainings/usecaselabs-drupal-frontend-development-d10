@@ -1,0 +1,3 @@
+.site-header__inner {
+  @include linear-gradient(to bottom, $brand-site-color $brand-black);
+}

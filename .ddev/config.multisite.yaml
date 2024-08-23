@@ -1,0 +1,9 @@
+additional_hostnames:
+  - front2
+  - front3
+hooks:
+  post-start:
+  - exec: mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS front2; GRANT ALL ON front2.* to 'db'@'%';"
+    service: db
+  - exec: mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS front3; GRANT ALL ON front3.* to 'db'@'%';"
+    service: db

@@ -1,0 +1,20 @@
+uuid: 74051b36-e998-4aa0-a383-64e6350db712
+langcode: en
+status: false
+dependencies:
+  theme:
+    - usecaselabs_1
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: usecaselabs_1_primary_admin_actions
+theme: usecaselabs_1
+region: secondary_header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 06d79af1-32f8-4abd-96b1-789a7fff15f8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1f5f4698-843f-457b-866b-a4f8805b8c47'
+  module:
+    - block_content
+  theme:
+    - usecaselabs
+id: usecaselabs_banner1
+theme: usecaselabs
+region: hero
+weight: -8
+provider: null
+plugin: 'block_content:1f5f4698-843f-457b-866b-a4f8805b8c47'
+settings:
+  id: 'block_content:1f5f4698-843f-457b-866b-a4f8805b8c47'
+  label: 'Banner Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

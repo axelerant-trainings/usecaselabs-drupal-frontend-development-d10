@@ -3,6 +3,7 @@ description: Custom theme for FE usecaselabs
 type: theme
 core_version_requirement: ^9 || ^10
 base theme: olivero
+version: 1
 
 regions:
   primary_header: Primary Header

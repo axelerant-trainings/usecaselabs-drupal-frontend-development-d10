@@ -1,0 +1,22 @@
+uuid: 4e600972-c44c-4034-b8d5-19aba10cfd51
+langcode: en
+status: true
+dependencies:
+  theme:
+    - usecaselabs_1
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: usecaselabs_1_primary_local_tasks
+theme: usecaselabs_1
+region: secondary_header
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

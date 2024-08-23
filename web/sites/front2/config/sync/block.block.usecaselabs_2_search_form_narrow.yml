@@ -1,0 +1,23 @@
+uuid: fe1dbba3-85e4-4f2a-a527-e64f87aa4cdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - usecaselabs_2
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: usecaselabs_2_search_form_narrow
+theme: usecaselabs_2
+region: primary_header
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

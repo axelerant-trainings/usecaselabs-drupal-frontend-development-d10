@@ -1,0 +1,20 @@
+uuid: 8cc10fcf-9b8d-42e9-a009-1b20d3f0793b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - usecaselabs_1
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: usecaselabs_1_page_title
+theme: usecaselabs_1
+region: primary_header
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

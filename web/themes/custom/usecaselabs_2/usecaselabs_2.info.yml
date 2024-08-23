@@ -1,0 +1,15 @@
+name: usecaselabs_2
+description: A theme with modern tooling.
+type: theme
+core_version_requirement: ^9 || ^10
+base theme: usecaselabs
+
+regions:
+  primary_header: Primary Header
+  secondary_header: Secondary Header
+  hero: Hero (full width)
+  content: Content
+  footer: Footer
+
+libraries:
+  - usecaselabs_2/global
