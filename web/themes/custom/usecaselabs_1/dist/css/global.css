@@ -15,7 +15,7 @@
     from(#ffd770),
     to(#fff)
   );
-  background: linear-gradient(top, #ffd770, #fff);
+  background: linear-gradient(to bottom, #ffd770, #fff);
 }
 
 .region--hero {

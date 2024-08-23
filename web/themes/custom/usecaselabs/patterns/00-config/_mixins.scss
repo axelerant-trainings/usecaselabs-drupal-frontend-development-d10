@@ -1,6 +1,6 @@
 // Define mixins scss variables here.
 @mixin linear-gradient(
-  $direction: top,
+  $direction: to bottom,
   $colors: $brand-site-color $brand-white
 ) {
   $list: ();
